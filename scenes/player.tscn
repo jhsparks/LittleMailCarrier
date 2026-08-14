@@ -417,9 +417,10 @@ size = Vector2(425, 236.5)
 script = ExtResource("1_g2els")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=757468695]
-position = Vector2(128, 17)
+position = Vector2(107, 76)
+scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_s7gq1")
-animation = &"walk_right"
+animation = &"idle_down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=921895727]
 position = Vector2(212.5, 119.75)
