@@ -147,10 +147,6 @@ region = Rect2(192, 102, 32, 34)
 atlas = ExtResource("1_3vyb7")
 region = Rect2(224, 102, 32, 34)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_smehm"]
-atlas = ExtResource("1_3vyb7")
-region = Rect2(0, 66, 256, 33)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_j2b1d"]
 atlas = ExtResource("1_3vyb7")
 region = Rect2(0, 68, 32, 34)
@@ -357,9 +353,6 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_smehm")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_j2b1d")
 }, {
 "duration": 1.0,
@@ -426,7 +419,7 @@ script = ExtResource("1_g2els")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=757468695]
 position = Vector2(128, 17)
 sprite_frames = SubResource("SpriteFrames_s7gq1")
-animation = &"walk_up"
+animation = &"walk_right"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=921895727]
 position = Vector2(212.5, 119.75)
