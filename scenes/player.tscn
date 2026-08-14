@@ -102,14 +102,15 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y0wrl"]
-size = Vector2(426, 239)
+size = Vector2(164, 24.5)
 
 [node name="Player" type="CharacterBody2D" unique_id=182844977]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=757468695]
+position = Vector2(128, 17)
 sprite_frames = SubResource("SpriteFrames_s7gq1")
-animation = &"idle_right"
+animation = &"walk_down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=921895727]
-position = Vector2(213, 119.5)
+position = Vector2(82, 13.75)
 shape = SubResource("RectangleShape2D_y0wrl")
