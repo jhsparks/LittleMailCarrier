@@ -1,8 +1,11 @@
 [gd_scene format=3 uid="uid://cy0h28541phx0"]
 
+[ext_resource type="Script" uid="uid://cb41itockhyov" path="res://scripts/door_trigger.gd" id="1_qgrgd"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lhw8a"]
 
 [node name="DoorTrigger" type="Area2D" unique_id=1714027062]
+script = ExtResource("1_qgrgd")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1039956640]
 shape = SubResource("RectangleShape2D_lhw8a")
