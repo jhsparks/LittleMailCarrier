@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cuasbjeqo3k00"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y0wrl"]
+
+[node name="PickupTrigger" type="Area2D" unique_id=1732688584]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=834991947]
+shape = SubResource("RectangleShape2D_y0wrl")
