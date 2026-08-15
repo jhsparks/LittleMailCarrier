@@ -411,17 +411,20 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y0wrl"]
-size = Vector2(425, 236.5)
+size = Vector2(58, 57.5)
 
 [node name="Player" type="CharacterBody2D" unique_id=182844977]
 script = ExtResource("1_g2els")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=757468695]
-position = Vector2(107, 76)
+position = Vector2(29, 26)
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_s7gq1")
 animation = &"idle_down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=921895727]
-position = Vector2(212.5, 119.75)
+position = Vector2(30, 29)
 shape = SubResource("RectangleShape2D_y0wrl")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=522213719]
+position_smoothing_enabled = true
