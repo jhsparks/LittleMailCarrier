@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://xxw66o0oaf5x"]
+
+[ext_resource type="Texture2D" uid="uid://btlopsk0xhk6k" path="res://assets/interior full/furniture/boxes.png" id="1_ahhtf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lhw8a"]
+atlas = ExtResource("1_ahhtf")
+region = Rect2(32, 48, 16, 16)
+
+[node name="HUD" type="Control" unique_id=701916139]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=491464646]
+
+[node name="MailPanel" type="PanelContainer" parent="CanvasLayer" unique_id=128967786]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/MailPanel" unique_id=594586951]
+layout_mode = 2
+
+[node name="MailIcon" type="TextureRect" parent="CanvasLayer/MailPanel/HBoxContainer" unique_id=882478456]
+texture_filter = 1
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+texture = SubResource("AtlasTexture_lhw8a")
