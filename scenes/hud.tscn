@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://xxw66o0oaf5x"]
 
 [ext_resource type="Texture2D" uid="uid://btlopsk0xhk6k" path="res://assets/interior full/furniture/boxes.png" id="1_ahhtf"]
+[ext_resource type="Script" uid="uid://cqdabtv0opxl0" path="res://scripts/hud.gd" id="1_oo0fn"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lhw8a"]
 atlas = ExtResource("1_ahhtf")
@@ -13,6 +14,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_oo0fn")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=491464646]
 
