@@ -19,6 +19,7 @@ func deliver_mail() -> bool:
 		print("Letter delivered! Remaining: ", mail_carried, " | Total delivered: ", mail_delivered)
 		mail_updated.emit(mail_carried, total_mail_needed)
 		if mail_delivered >= total_mail_needed:
+			print("DAY COMPLETED!")
 			day_completed.emit()
 		return true
 	else:
