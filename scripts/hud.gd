@@ -15,7 +15,6 @@ func _on_mail_updated(carried: int, _needed: int) -> void:
 
 func _on_day_completed() -> void:
 	print("showing win panel now")
-	win_panel.text = "YOU WIN"
 	win_panel.show()
 
 func show_prompt(text_message: String) -> void:
