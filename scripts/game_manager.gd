@@ -1,7 +1,7 @@
 extends Node
 
 signal mail_updated(carried: int, needed: int)
-signal day_completed()
+signal day_completed
 
 var mail_carried: int = 0       # Mail currently in satchel
 var mail_delivered: int = 0     # Total delivered
