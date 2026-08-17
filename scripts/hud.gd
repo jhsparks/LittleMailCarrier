@@ -14,6 +14,7 @@ func _on_mail_updated(carried: int, _needed: int) -> void:
 	mail_label.text = "Satchel: " + str(carried) + " / 7"
 
 func _on_day_completed() -> void:
+	print("showing win panel now")
 	win_panel.show()
 
 func show_prompt(text_message: String) -> void:
