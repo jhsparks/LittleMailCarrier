@@ -35,19 +35,19 @@ texture = SubResource("AtlasTexture_lhw8a")
 layout_mode = 2
 text = " Satchel: 0 / 7"
 
-[node name="InteractionPrompt" type="Label" parent="CanvasLayer" unique_id=1749589833]
+[node name="InteractionPrompt" type="Label" parent="CanvasLayer" unique_id=1116163965]
 visible = false
-offset_left = 174.0
-offset_top = 217.0
-offset_right = 240.0
-offset_bottom = 240.0
+offset_left = 184.0
+offset_top = 213.0
+offset_right = 250.0
+offset_bottom = 236.0
 text = " Interact"
 
-[node name="WinPanel" type="PanelContainer" parent="CanvasLayer" unique_id=97244972]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="WinPanel" type="PanelContainer" parent="CanvasLayer" unique_id=766742905]
+offset_top = 39.0
+offset_right = 220.0
+offset_bottom = 79.0
 
-[node name="Label" type="Label" parent="CanvasLayer/WinPanel" unique_id=535686468]
-visible = false
+[node name="Label" type="Label" parent="CanvasLayer/WinPanel" unique_id=2131191872]
 layout_mode = 2
-text = "All Mail Delivered! Great Job !"
+text = "All Mail Delivered! Great Job!"
