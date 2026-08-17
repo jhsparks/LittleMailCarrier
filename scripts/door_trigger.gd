@@ -14,7 +14,7 @@ func _process(_delta: float) -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player") or body.name == "Player":
-		HUD.show_prompt("[SPACE] Pick Up Mail")
+		HUD.show_prompt("[SPACE] Deliver Mail")
 		player_in_range = true
 
 func _on_body_exited(body: Node2D) -> void:
