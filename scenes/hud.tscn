@@ -2,6 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://btlopsk0xhk6k" path="res://assets/interior full/furniture/boxes.png" id="1_ahhtf"]
 [ext_resource type="Script" uid="uid://cqdabtv0opxl0" path="res://scripts/hud.gd" id="1_oo0fn"]
+[ext_resource type="AudioStream" uid="uid://c05ywlxtp7dnm" path="res://assets/sfx/pickup.wav" id="3_uo2fv"]
+[ext_resource type="AudioStream" uid="uid://b6eyhrq7qy0j8" path="res://assets/sfx/delivered.wav" id="4_047uy"]
+[ext_resource type="AudioStream" uid="uid://bfk54rxh0juky" path="res://assets/sfx/fanfare.wav" id="5_5pdws"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lhw8a"]
 atlas = ExtResource("1_ahhtf")
@@ -51,3 +54,20 @@ offset_bottom = 79.0
 [node name="Label" type="Label" parent="CanvasLayer/WinPanel" unique_id=2131191872]
 layout_mode = 2
 text = "All Mail Delivered! Great Job!"
+
+[node name="PickupSFX" type="AudioStreamPlayer2D" parent="CanvasLayer" unique_id=1778853681]
+stream = ExtResource("3_uo2fv")
+
+[node name="DeliverSFX" type="AudioStreamPlayer2D" parent="CanvasLayer" unique_id=832928827]
+stream = ExtResource("4_047uy")
+
+[node name="FanfareSFX" type="AudioStreamPlayer2D" parent="CanvasLayer" unique_id=136044476]
+stream = ExtResource("5_5pdws")
+
+[node name="Delivery Popup" type="Label" parent="CanvasLayer" unique_id=1455611902]
+visible = false
+offset_left = 158.0
+offset_top = 217.0
+offset_right = 274.0
+offset_bottom = 240.0
+text = "Mail Delivered!"
