@@ -55,19 +55,19 @@ offset_bottom = 79.0
 layout_mode = 2
 text = "All Mail Delivered! Great Job!"
 
-[node name="PickupSFX" type="AudioStreamPlayer2D" parent="CanvasLayer" unique_id=1778853681]
+[node name="PickupSFX" type="AudioStreamPlayer" parent="CanvasLayer" unique_id=1846440062]
 stream = ExtResource("3_uo2fv")
 
-[node name="DeliverSFX" type="AudioStreamPlayer2D" parent="CanvasLayer" unique_id=832928827]
+[node name="DeliverSFX" type="AudioStreamPlayer" parent="CanvasLayer" unique_id=739905335]
 stream = ExtResource("4_047uy")
 
-[node name="FanfareSFX" type="AudioStreamPlayer2D" parent="CanvasLayer" unique_id=136044476]
+[node name="FanfareSFX" type="AudioStreamPlayer" parent="CanvasLayer" unique_id=924732718]
 stream = ExtResource("5_5pdws")
 
-[node name="Delivery Popup" type="Label" parent="CanvasLayer" unique_id=1455611902]
+[node name="DeliveryPopup" type="Label" parent="CanvasLayer" unique_id=1889422518]
 visible = false
-offset_left = 158.0
-offset_top = 217.0
-offset_right = 274.0
-offset_bottom = 240.0
+offset_left = 160.0
+offset_top = 215.0
+offset_right = 276.0
+offset_bottom = 238.0
 text = "Mail Delivered!"
