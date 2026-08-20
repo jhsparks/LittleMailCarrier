@@ -54,3 +54,4 @@ func hide_prompt() -> void:
 
 func _on_restart_pressed() -> void:
 	GameManager.reset_day()
+	_ready()
