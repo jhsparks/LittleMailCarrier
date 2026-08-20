@@ -8,7 +8,7 @@ extends Control
 @onready var pickup_sfx: AudioStreamPlayer = $CanvasLayer/PickupSFX
 @onready var deliver_sfx: AudioStreamPlayer = $CanvasLayer/DeliverSFX
 @onready var fanfare_sfx: AudioStreamPlayer = $CanvasLayer/FanfareSFX
-@onready var restart_button: Button = $CanvasLayer/WinPanel/RestartButton
+@onready var restart_button: Button = $CanvasLayer/WinPanel/VBoxContainer/RestartButton
 
 
 var previous_mail: int = 0
