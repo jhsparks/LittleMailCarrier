@@ -8,6 +8,8 @@ extends Control
 @onready var pickup_sfx: AudioStreamPlayer = $CanvasLayer/PickupSFX
 @onready var deliver_sfx: AudioStreamPlayer = $CanvasLayer/DeliverSFX
 @onready var fanfare_sfx: AudioStreamPlayer = $CanvasLayer/FanfareSFX
+@onready var restart_button: Button = $CanvasLayer/WinPanel/RestartButton
+
 
 var previous_mail: int = 0
 
@@ -17,7 +19,7 @@ func _ready() -> void:
 	prompt_label.hide()
 	win_panel.hide()
 	popup_label.hide()
-
+	restart_button.pressed.connect(_on_restart_pressed)
 
 func _on_mail_updated(carried: int, _needed: int) -> void:
 	mail_label.text = "Satchel: " + str(carried) + " / 7"
@@ -49,3 +51,6 @@ func show_prompt(text_message: String) -> void:
 
 func hide_prompt() -> void:
 	prompt_label.hide()
+
+func _on_restart_pressed() -> void:
+	GameManager.reset_day()

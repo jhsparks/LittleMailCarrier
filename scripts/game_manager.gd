@@ -25,3 +25,8 @@ func deliver_mail() -> bool:
 	else:
 		print("Your mailbag is empty! Go to Mail HQ to pick up letters first.")
 		return false
+
+func reset_day() -> void:
+	mail_carried = 0
+	mail_delivered = 0
+	get_tree().reload_current_scene()
