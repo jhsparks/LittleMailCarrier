@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="LittleMailCarrier"
-run/main_scene="uid://dcl1dyw0lu03s"
+run/main_scene="uid://d1yhp0epq1b7t"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
